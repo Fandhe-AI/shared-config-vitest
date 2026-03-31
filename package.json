@@ -7,13 +7,19 @@
     "vitest": "4.1.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "20.5.0",
+    "@commitlint/config-conventional": "20.5.0",
+    "@commitlint/types": "20.5.0",
     "@fandhe-ai/shared-config-typescript": "workspace:*",
+    "lefthook": "2.1.4",
     "typescript": "6.0.2"
   },
   "exports": {
     "./*": "./src/config/*.ts"
   },
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "prepare": "lefthook install"
+  },
   "type": "module"
 }
